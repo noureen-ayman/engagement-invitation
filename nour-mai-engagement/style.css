@@ -387,13 +387,19 @@ img.img-missing::after { content: ""; }
         width: 100%;
     }
 
-    /* توسيط وضبط حجم الصور بالقوة للمنتصف */
+    /* تكبير الصور وسحبها للشمال يدوياً */
     .collage {
+        transform: scale(0.8) !important;
+        transform-origin: top center !important;
+
+        /* إلغاء أكواد التوسيط المعقدة السابقة */
         position: relative !important;
-        left: 50% !important;
-        transform: translateX(-50%) scale(0.8) !important;
-        margin: 20px 0 0 0 !important;
-        width: auto !important; /* لتجنب أي مساحات وهمية */
+        left: 0 !important;
+
+        /* السطر ده هو اللي هيسحب الصور للشمال.. لو لسة مرحلة يمين زودي الرقم لـ -20% أو -25% */
+        margin-left: -15% !important;
+
+        margin-top: 20px !important;
     }
 
     .section.invite {
