@@ -389,7 +389,7 @@ img.img-missing::after { content: ""; }
 
     /* 2. تصغير وتوسيط مجموعة الصور */
     .collage {
-        transform: scale(0.8) !important; /* تصغير الصور للنصف عشان تكفي الشاشة */
+        transform: scale(0.5) !important; /* تصغير الصور للنصف عشان تكفي الشاشة */
         transform-origin: top center !important; /* التصغير يبدأ من المنتصف من الأعلى */
         margin: 20px auto 0 auto !important; /* توسيط قسم الصور بالكامل */
         width: 100%;
