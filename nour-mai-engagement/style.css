@@ -380,6 +380,18 @@ img.img-missing::after { content: ""; }
   .message { align-items: center; text-align: center; }
   .message-text, .message-text--soft { max-width: 720px; margin-left: auto; margin-right: auto; }
 }
+@media (max-width: 768px) {
+    .collage {
+        /* ده هيعمل تصغير (Zoom out) لقسم الصور بالكامل بنسبة 70% عشان يناسب الشاشة */
+        transform: scale(0.7);
+        transform-origin: left center;
+        margin-left: -10%; /* لضبط المسافة لو الصور مالت لليمين زيادة */
+    }
+
+    .section-title {
+        font-size: 2rem; /* تصغير الخطوط شوية لو كانت كبيرة جداً */
+    }
+}
 
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
