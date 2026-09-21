@@ -381,23 +381,21 @@ img.img-missing::after { content: ""; }
   .message-text, .message-text--soft { max-width: 720px; margin-left: auto; margin-right: auto; }
 }
 @media (max-width: 768px) {
-    /* 1. توسيط النصوص زي اللابتوب بالظبط */
+    /* توسيط النصوص */
     .invite-heading, .section-title, .section-sub, .eyebrow {
         text-align: center !important;
         width: 100%;
     }
 
-    /* 2. تصغير وتوسيط مجموعة الصور */
+    /* توسيط وضبط حجم الصور بالقوة للمنتصف */
     .collage {
-        transform: scale(0.5) !important; /* تصغير الصور للنصف عشان تكفي الشاشة */
-        transform-origin: top center !important; /* التصغير يبدأ من المنتصف من الأعلى */
-        margin: 20px auto 0 auto !important; /* توسيط قسم الصور بالكامل */
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) scale(0.8) !important;
+        margin: 20px 0 0 0 !important;
+        width: auto !important; /* لتجنب أي مساحات وهمية */
     }
 
-    /* تقليل الارتفاع الزائد اللي ممكن ينتج عن تصغير الصور */
     .section.invite {
         padding-bottom: 20px !important;
     }
